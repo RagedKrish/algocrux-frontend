@@ -62,7 +62,7 @@ const Login = () => {
             <p>
               Need an account ?
             </p>
-            <Link href={'/signup'} className='underline text-cyan-600'>Login</Link>
+            <Link href={'/signup'} className='underline text-cyan-600'>Signup</Link>
           </div>
         </form>
       </div>
