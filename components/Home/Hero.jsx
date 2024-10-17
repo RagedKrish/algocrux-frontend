@@ -20,7 +20,7 @@ const Hero = () => {
 
   return (
     <section className="flex justify-center items-center w-full min-h-screen hero">
-      <div className="lg:container flex flex-col justify-center items-center w-full px-5 py-3 gap-5">
+      <div className="lg:container flex flex-col justify-center items-center w-full px-5 py-12 md:py-3 gap-5">
         <h1 className="text-6xl lg:text-8xl font-semibold text-center heading">
           Decode Develop Collaborate
         </h1>
