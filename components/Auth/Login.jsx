@@ -60,7 +60,7 @@ const Login = () => {
           </button>
           <div className='flex gap-2 text-lg font-medium text-slate-200 self-start'>
             <p>
-              Already have an account ?
+              Need an account ?
             </p>
             <Link href={'/signup'} className='underline text-cyan-600'>Login</Link>
           </div>

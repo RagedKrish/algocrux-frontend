@@ -93,7 +93,7 @@ const Signup = () => {
             Sign Up
           </button>
           <div className="flex gap-2 text-lg font-medium text-slate-200 self-start">
-            <p>Need an account ?</p>
+            <p>Already have an account ?</p>
             <Link href={'/login'} className="underline text-cyan-600">
               Login
             </Link>

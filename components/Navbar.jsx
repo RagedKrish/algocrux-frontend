@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { SiWolframlanguage } from "react-icons/si";
+import useAuth from "@/context/AuthContext";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
-  const { user } = useState(true);
+  const auth = useAuth();
 
   const toggleNavbar = () => {
     setNavbar(!navbar);
@@ -53,7 +54,7 @@ const Navbar = () => {
               ))}
             </div>
             <div className="hidden lg:flex space-x-5">
-              {user ? (
+              {auth ? (
                 <Link
                   href={`/dashboard`}
                   className="px-7 py-2 text-lg font-medium rounded-xl bg-cyan-600 hover:bg-cyan-700 slow"
@@ -106,7 +107,7 @@ const Navbar = () => {
               </Link>
             ))}
             <div className="flex justify-between items-center w-full gap-5 text-center">
-              {user ? (
+              {auth ? (
                 <Link
                   href={`/dashboard`}
                   className="px-7 py-2 text-lg font-medium rounded-xl bg-cyan-600 hover:bg-cyan-700 slow w-full slow"

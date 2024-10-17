@@ -29,7 +29,7 @@ const Hero = () => {
           of technology through collaborative innovation
         </p>
         <Link
-          href={""}
+          href={"/forums"}
           className="flex items-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-xl font-medium text-slate-100 text-center py-2 px-7 rounded-lg slow"
         >
           Join the Community

@@ -11,6 +11,8 @@
   "dependencies": {
     "algocrux": "file:",
     "axios": "^1.7.7",
+    "js-cookie": "^3.0.5",
+    "js-cookies": "^1.0.4",
     "lucide-react": "^0.453.0",
     "next": "14.2.15",
     "react": "^18",
