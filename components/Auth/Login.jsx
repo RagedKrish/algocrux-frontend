@@ -24,7 +24,8 @@ const Login = () => {
         Router.push('/dashboard')
     } catch (error) {
       setError(error.response?.data?.message || "An error occurred");
-    }    
+    }
+    
   }
 
   return (
