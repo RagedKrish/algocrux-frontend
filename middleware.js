@@ -2,15 +2,15 @@ import { NextResponse } from 'next/server';
 
 const middleware = (req) => {
     try {
-        const token = req.cookies.get('token');
+        const token = req.cookies.get('token')?.value;
         const { pathname } = req.nextUrl;
 
         if (!token && pathname === '/dashboard') {
-            return NextResponse.redirect('/login');
+            return NextResponse.redirect(new URL('/login', req.url));
         }
 
         if (token && (pathname === '/login' || pathname === '/signup')) {
-            return NextResponse.redirect('/dashboard');
+            return NextResponse.redirect(new URL('/dashboard', req.url));
         }
 
         return NextResponse.next();
